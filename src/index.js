@@ -75,7 +75,7 @@ class Widget extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["key"];
+    return ["clientId"];
   }
 
   attributeChangedCallback(property, oldValue, newValue) {
@@ -84,7 +84,7 @@ class Widget extends HTMLElement {
   }
 
   connectedCallback() {
-    this.shadowRoot.querySelector("#widget-button").href = `https://trebol-app.vercel.app/${this.key}`;
+    this.shadowRoot.querySelector("#widget-button").href = `https://trebol-app.vercel.app/${this.clientId}`;
   }
 }
 
