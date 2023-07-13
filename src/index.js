@@ -84,7 +84,7 @@ class Widget extends HTMLElement {
   }
 
   connectedCallback() {
-    this.shadowRoot.querySelector("#widget-button").href = `http://localhost:3000/${this.key}`;
+    this.shadowRoot.querySelector("#widget-button").href = `https://trebol-app.vercel.app/${this.key}`;
   }
 }
 
